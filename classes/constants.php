@@ -232,6 +232,8 @@ class constants {
     const M_START_BUTTON_CONTAINER = 'mod_readaloud_start_button_cont';
     const M_STOP_BUTTON_CONTAINER = 'mod_readaloud_stop_button_cont';
     const M_RECORDERID = 'therecorderid';
+    // The in page streaming recorder used by the read step, in place of the cloud poodll iframe.
+    const M_READ_TTRECORDER = 'readaloud_read_ttrecorder';
     const M_RECORDING_CONTAINER = 'mod_readaloud_recording_cont';
     const M_RECORDER_CONTAINER = 'mod_readaloud_recorder_cont';
     const M_DUMMY_RECORDER = 'mod_readaloud_dummy_recorder';
@@ -362,6 +364,16 @@ class constants {
     const M_LANG_SRRS = 'sr-RS';
 
     const TTS_NONE='ttsnone';
+
+    // Realtime transcription: which recogniser to prefer. Stored in the alternatestreaming setting,
+    // whose values are unchanged from when it was a checkbox.
+    const REALTIME_AUTO = 0;
+    const REALTIME_THIRDPARTY = 1;
+
+    // Realtime transcription: which activity steps it applies to. Stored in the streamingread
+    // setting, whose values are unchanged from when it was a checkbox.
+    const REALTIMESTEPS_PRACTICE = 0;
+    const REALTIMESTEPS_PRACTICEREAD = 1;
 
     const TRANSCRIBER_GUIDED = 0;
     const TRANSCRIBER_STRICT = 1;
